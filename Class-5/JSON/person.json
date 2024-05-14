@@ -1,0 +1,13 @@
+{
+  "name": "Neeraj",
+  "age": 30,
+  "isStudent": false,
+  "address": {
+    "city": "Bengaluru",
+    "code": "455566"
+  },
+  "hasPets": null,
+  "hobbies": ["rider", "provider"],
+  "jobRole": "Frontend developer",
+  "skill": "javascript"
+}

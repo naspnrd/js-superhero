@@ -1,0 +1,16 @@
+<root>
+    <name>Neeraj</name>
+    <age>30</age>
+    <isStudent>false</isStudent>
+    <address>
+        <city>Bengaluru</city>
+        <code>455566</code>
+    </address>
+    <hasPets>null</hasPets>
+    <hobbies>
+        <hobby>rider</hobby>
+        <hobby>provider</hobby>
+    </hobbies>
+    <jobRole>Frontend developer</jobRole>
+    <skill>javascript</skill>
+</root>
