@@ -1,0 +1,49 @@
+/*  your css code here. If applicable */
+.progress-bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.circle {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #c2c6c9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	color: black;
+	background: #fff;
+}
+
+.active {
+	border-color: #1e86d0;
+	color: black;
+}
+
+.line {
+	height: 2px;
+	flex: 1;
+	background: #c2c6c9;
+}
+
+.line.active{
+	background: #1e86d0;
+}
+
+button {
+	padding: 8px 30px;
+	margin: 0 5px;
+	cursor: pointer;
+	background-color: #1e86d0;
+	border-radius: 6px;
+	color: white;
+}
+
+button:disabled {
+	cursor: not-allowed;
+	opacity: 0.7;
+
+}
