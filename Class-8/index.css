@@ -1,0 +1,19 @@
+.secondary {
+    background-color: red;
+    color: black;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+span {
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
