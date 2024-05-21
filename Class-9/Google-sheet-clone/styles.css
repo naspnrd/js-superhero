@@ -1,0 +1,90 @@
+body {
+    /* background-color: black; */
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 30px auto;
+    height: 80vh;
+    width: 100vw;
+    border: 1px solid #c0c0c0;
+    /* margin: 50px auto; */
+    overflow-x: scroll;
+    box-sizing: border-box;
+}
+
+.plate {
+    background-color: gray;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.head-row {
+    /* grid-column: 1/3; */
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.head-row .col-head {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #c0c0c0;
+}
+
+/* .head-row div:first-child {
+    width: 40px;
+    background-color: gray;
+} */
+
+/* .container div{
+    border: 2px solid black;
+} */
+
+.serialNo {
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+
+}
+
+.serialNo .sno-cell{
+    height: 30px;
+    border: 1px solid #c0c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.body {
+    /* background-color: aquamarine;, */
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    border: 1px solid #c0c0c0;
+    width: 150px;
+    height: 30px;
+    outline: none;
+    overflow-y: hidden;
+    cursor: text;
+    white-space: pre-wrap;
+}
+
+.cell:focus{
+    border-color: blue;
+}

@@ -189,27 +189,46 @@ const namesContainer = document.querySelector("#names-container");
 //   namesContainer.appendChild(ul);
 // });
 
-input.addEventListener("change", function (event) {
-  //   console.log(event);
-  const target = event.target;
-  const value = target.value;
-  console.log(value);
-  // or
-  //   const value = event.target.value;
-  //   const { value } = event.target;
+// input.addEventListener("change", function (event) {
+//   //   console.log(event);
+//   const target = event.target;
+//   const value = target.value;
+//   console.log(value);
+//   // or
+//   //   const value = event.target.value;
+//   //   const { value } = event.target;
 
-  const filteredStudents = students.filter((student) => {
-    let studentLoweredValue = student.toLowerCase();
-    return studentLoweredValue.includes(value.toLowerCase());
-  });
-  console.log(filteredStudents);
-  const ul = document.createElement("ul");
-  ul.innerText = "";
-  namesContainer.innerText = "";
-  filteredStudents.forEach((student) => {
-    let li = document.createElement("li");
-    li.innerText = student;
-    ul.appendChild(li);
-  });
-  namesContainer.appendChild(ul);
+//   const filteredStudents = students.filter((student) => {
+//     let studentLoweredValue = student.toLowerCase();
+//     return studentLoweredValue.includes(value.toLowerCase());
+//   });
+//   console.log(filteredStudents);
+//   const ul = document.createElement("ul");
+//   ul.innerText = "";
+//   namesContainer.innerText = "";
+//   filteredStudents.forEach((student) => {
+//     let li = document.createElement("li");
+//     li.innerText = student;
+//     ul.appendChild(li);
+//   });
+//   namesContainer.appendChild(ul);
+// });
+
+const inputElement = document.getElementById("textInput");
+const outputElement = document.getElementById("output");
+
+// keydown event
+
+inputElement.addEventListener("keydown", (event) => {
+  console.log("key down", event);
+  console.log("key down", event.key);
+  outputElement.textContent = `key down: ${event.key} (code: ${event.code}, keyCode: ${event.keyCode})`;
+});
+
+// keyup event
+
+inputElement.addEventListener("keyup", (event) => {
+  console.log("key up", event);
+  console.log("key up", event.key);
+  outputElement.textContent += `key up: ${event.key} (code: ${event.code}, keyCode: ${event.keyCode})`;
 });
