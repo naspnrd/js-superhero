@@ -35,6 +35,7 @@ for (let row = 1; row <= rows; row++) {
     const colCell = document.createElement("div");
     colCell.classList.add("cell");
     colCell.contentEditable = true;
+    colCell.id = `${String.fromCharCode(col + 64)}${row}`;
     rowCells.appendChild(colCell);
   }
   body.appendChild(rowCells);

@@ -88,3 +88,70 @@ body {
 .cell:focus{
     border-color: blue;
 }
+
+.options {
+    background-color: #F8FBFD;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-container {
+    padding: 10px;
+    margin: 0 30px;
+    background-color: #EDF2FA;
+    border-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.fr-aic {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+}
+
+input[type="color"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
+    background-color: #D3E2FD;
+}
+
+label {
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.box {
+    width: 80vw;
+    margin: auto;
+}
+
+.box input {
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 50px;
+    border-width: 1px;
+}
+
+.box .selected-cell{
+    background-color: #D3E2FD;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 40px;
+}
+
+.active-cell {
+    border: 1px solid #0957D0;
+}
