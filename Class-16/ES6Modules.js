@@ -27,13 +27,13 @@
 
 // index.js
 
-console.log("index.js");
-import { sum } from "./helper.js";
-console.log(sum(1, 2));
+// console.log("index.js");
+// import { sum } from "./helper.js";
+// console.log(sum(1, 2));
 
 // helper.js
 
-console.log("helper.js");
-export const sum = (x, y) => x + y;
+// console.log("helper.js");
+// export const sum = (x, y) => x + y;
 
 // Output
