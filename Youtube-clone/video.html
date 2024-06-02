@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <script src="video.js" defer type="module"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="toggle-btn">
+        <!-- Button for toggeling sidebar-->
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- <span></span> -->
+      </div>
+      <a href="/Youtube-clone/main.html">
+        <img src="img/logo.PNG" class="logo" alt="youtube-icon" />
+      </a>
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="search your video" />
+        <button class="search-btn">
+          <img src="img/search.PNG" alt="search-icon" />
+        </button>
+      </div>
+      <div class="user-options">
+        <img src="img/video.PNG" alt="create-video-icon" class="icon" />
+        <img src="img/grid.PNG" alt="grid" class="icon" />
+        <img src="img/bell.PNG" alt="notification-icon" class="icon" />
+        <div class="user-dp">
+          <img src="img/profile-pic.png" alt="" />
+        </div>
+      </div>
+    </nav>
+    <div class="video-player-container">
+      <div id="video-player"></div>
+    </div>
+    <!-- video comments -->
+    <div class="video-comments-container">
+      <h1>Comments</h1>
+      <ul id="video-comments-list" class="comment-list">
+        <!-- <li class="comment-item">
+          <div class="comment-author">
+            <img
+              src="data:image/png;base64,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"
+              alt="profile-img"
+            />
+            Sample UserName
+          </div>
+          <div class="comment-body">
+            <div class="comment-text">This is a sample comment.</div>
+            <div class="comments-actions">
+              <img src="img/liked video.PNG" alt="like-icon" />
+              <span class="action-count">10</span>
+              <img
+                src="img/liked video.PNG"
+                alt="dislike-icon"
+                class="dislike"
+              />
+              <span class="action-reply">Reply</span>
+            </div>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+  </body>
+</html>
