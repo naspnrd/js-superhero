@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" type="module" defer></script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <!-- HW -->
+    <nav class="navbar">
+      <div class="toggle-btn">
+        <!-- Button for toggeling sidebar-->
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- <span></span> -->
+      </div>
+      <a href="/Youtube-clone/main.html">
+        <img src="img/logo.PNG" class="logo" alt="youtube-icon" />
+      </a>
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="search your video" />
+        <button class="search-btn">
+          <img src="img/search.PNG" alt="search-icon" />
+        </button>
+      </div>
+      <div class="user-options">
+        <img src="img/video.PNG" alt="create-video-icon" class="icon" />
+        <img src="img/grid.PNG" alt="grid" class="icon" />
+        <img src="img/bell.PNG" alt="notification-icon" class="icon" />
+        <div class="user-dp">
+          <img src="img/profile-pic.png" alt="" />
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="#" class="links active"
+        ><img src="img/home.PNG" alt="home-icon" />Home</a
+      >
+      <a href="#" class="links"
+        ><img src="img/explore.PNG" alt="explore-icon" />Explore</a
+      >
+      <a href="#" class="links"
+        ><img
+          src="img/subscription.PNG"
+          alt="subscription-icon"
+        />Subscription</a
+      >
+      <a href="#" class="links"
+        ><img src="img/library.PNG" alt="library-icon" />Library</a
+      >
+      <a href="#" class="links"
+        ><img src="img/history.PNG" alt="history-icon" />History</a
+      >
+      <a href="#" class="links"
+        ><img src="img/watch-later.PNG" alt="watch-later-icon" />Watch later</a
+      >
+      <a href="#" class="links"
+        ><img src="img/liked video.PNG" alt="liked-video-icon" />Liked Videos</a
+      >
+      <a href="#" class="links"
+        ><img src="img/show more.PNG" alt="show-more-icon" />Show More</a
+      >
+    </div>
+
+    <!-- video container -->
+    <div class="video-container"></div>
+    <!-- Filters -->
+    <div class="filters">
+      <div class="filter-options active">All</div>
+      <div class="filter-options">Javascript</div>
+      <div class="filter-options">React</div>
+      <div class="filter-options">HTML</div>
+    </div>
+  </body>
+</html>
